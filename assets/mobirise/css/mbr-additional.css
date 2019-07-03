@@ -574,9 +574,6 @@ a:hover {
   color: #dfd9c6;
 }
 /* Scroll to top button*/
-.scrollToTop_wraper {
-  display: none;
-}
 #scrollToTop a i:before {
   content: '';
   position: absolute;
@@ -1302,14 +1299,34 @@ body {
   background-color: #061a76;
   color: #ffffff;
 }
-.jq-selectbox .jq-selectbox__trigger-arrow {
-  border-top-color: contrast(currentColor, #000000, #ffffff, 30%);
+.jq-selectbox .jq-selectbox__trigger-arrow,
+.jq-number__spin.minus:after,
+.jq-number__spin.plus:after {
+  transition: 0.4s;
+  border-top-color: currentColor;
+  border-bottom-color: currentColor;
 }
-.jq-selectbox:hover .jq-selectbox__trigger-arrow {
+.jq-selectbox:hover .jq-selectbox__trigger-arrow,
+.jq-number__spin.minus:hover:after,
+.jq-number__spin.plus:hover:after {
   border-top-color: #061a76;
+  border-bottom-color: #061a76;
+}
+.xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_default,
+.xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_current,
+.xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box > div > div.xdsoft_current {
+  color: #ffffff !important;
+  background-color: #061a76 !important;
+  box-shadow: none!important;
+}
+.xdsoft_datetimepicker .xdsoft_calendar td:hover,
+.xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box > div > div:hover {
+  color: #ffffff !important;
+  background: #ff3366 !important;
+  box-shadow: none !important;
 }
 .cid-rlfBSzl4al {
-  background-image: url("../../../assets/images/93125106-abstract-tech-design-background-engineering-technology-wallpaper-made-with-lines-dots-circles-futuri-1300x731.jpg");
+  background-image: url("../../../assets/images/93125106-abstract-tech-design-background-engineering-technology-wallpaper-made-with-lines-dots-circles-futuri-1-1300x731.jpg");
 }
 .cid-rlfBSzl4al .mbr-text,
 .cid-rlfBSzl4al .mbr-section-btn B {
@@ -3983,6 +4000,20 @@ body {
 .cid-rsiXhLblaG .media-container-row {
   -webkit-flex-direction: row-reverse;
   flex-direction: row-reverse;
+}
+.cid-rsrcnKsvTk {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background-image: url("../../../assets/images/graduation1image-920x518.jpg");
+}
+.cid-rsrcnKsvTk .mbr-section-subtitle {
+  color: #0f7699;
+}
+.cid-rsrcnKsvTk .btn {
+  margin: 0 0 .5rem 0;
+}
+.cid-rsrcnKsvTk SPAN {
+  color: #465052;
 }
 .cid-rsqM3DA7hQ {
   padding-top: 60px;
